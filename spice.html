@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css"></head>
+
+<body>
+    <header>
+    </header>
+    <div class="sidenav">
+        <div> <img src="test.png" style="width:100px"></div>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <button class="dropdown-btn">Products
+            <i class="fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="metal.html">Metal</a>
+            <a href="spice.html">Spices</a></a>
+            <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="main">
+        <div class="grid-containerhead">
+            <div class="gridhead">gridhead</div>
+            <div class="gridheadimage"><img src=test.png></div>
+        </div>
+        <div class="grid-containercontent">
+            <div><div class="card">
+                <img src="test.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>cinnamon/grid4</b></h4>
+                    <p>description</p>
+                </div>
+            </div></div>
+            <div>grid2</div>
+            <div>3</div>
+            <div>
+                <div class="card">
+                    <img src="test.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>cinnamon/grid4</b></h4>
+                        <p>description</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="cinnamon.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>cinnamon/grid4</b></h4>
+                        <p>description</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="cinnamon.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>cinnamon/grid4</b></h4>
+                        <p>description</p>
+                    </div>
+                </div>
+            </div>
+            <div>7</div>
+            <div>
+                What is Lorem Ipsum?
+
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Why do we use it?
+
+            </div>
+            <div>9</div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        } 
+    </script>
+</body>
+
+</html> t

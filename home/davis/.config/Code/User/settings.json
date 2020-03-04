@@ -1,0 +1,19 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "cloud9sync.accessKey": "AKIAJHHU2HYJRHU5I4BA",
+    "cloud9sync.secretKey": "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",
+    "cloud9sync.region": "us-east-2",
+    "python.jediEnabled": false,
+    "files.autoSave": "afterDelay",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": -2,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "emmet.showSuggestionsAsSnippets": true
+}
