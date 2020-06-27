@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+    </style>
+
+    
+
+    <!--todo; link header to home, add pagelinks to home page cards, so mobile doesnt have to fumble sidenav-->
+
+</head>
+
+<body>
+  <div id="pwg" class="header">Pacific West Gateway</div>
+
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="metal.html">Metalworks</a>
+        <a href="spice.html">Spices</a>
+        <a href="textiles.html">Textiles</a>
+      </div>
+    </div>
+    <a href="services.html">About Us</a>
+    <a href="contactus.php">Contact Us</a>
+  </div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    
+
+
+</body>
+
+</html>

@@ -2,210 +2,147 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            font-family: "Lato", sans-serif;
-        }
 
-        /*header {
-            background-color: #eee;
-            text-align: start;
-            display: block;
-            color: rgb(7, 7, 7);
-            height: 10vw;
-            margin-left: 10vw;
-        }*/
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css\style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <style>
+  </style>
 
-        .sidenav {
-            width: 100px;
-            min-height: 100%;
-            max-height: 100%;
-            position: fixed;
-            z-index: 1;
-            background: #F0FFFF;
-            overflow-x: hidden;
-          }
 
-        .gridhead {
-            grid-area: gridhead;
-        }
 
-        .sidenav a,
-        .dropdown-btn {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 12px;
-            color: #3C1618;
-            display: block;
-            border: none;
-            text-align: left;
-            background-color: #F0FFFF;
-            
-   
-        }
+  <!--todo; link header to home, add pagelinks to home page cards, so mobile doesnt have to fumble sidenav-->
 
-        /* below can add grid-gap and padding for cell padding*/
-        .grid-containerhead {
-            display: grid;
-            grid-template-areas: 'gridhead gridhead gridheadimage';
-            grid-template-rows: 23vh;
-            max-height: 23vh;
-            background-color: #eeeeee;
-            overflow: hidden
-
-        }
-
-        .grid-containerhead>div {
-            background-color: #eeeeee;
-            border: 1px;
-            text-align: left;
-            font-size: 30px;
-            color: #064579
-            overflow: hidden;
-            align-content:auto;
-        }
-
-        .grid-containercontent {
-            display: grid;
-            grid-template-columns: 20vw 20vw 20vw;
-            grid-gap: 20px;
-            background-color: rgb(231, 213, 213);
-            padding: auto;
-            margin-left: 10px;
-            margin-top: 10px;
-            flex:flex-shrink;
-        }
-
-        .grid-containercontent>div {
-            flex:inle;
-            max-width: inherit;
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid black;
-            text-align: auto;
-            font-size: 30px;
-            flex:center;
-        }
-
-        .active {
-            color: #064579;
-            ;
-        }
-
-        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-        .dropdown-container {
-            display: none;
-            padding-left: 8px;
-            color:rgb(199, 177, 177)
-             
-        }
-
-        /* Optional: Style the caret down icon */
-        .fa-caret-down {
-            float: left;
-        }
-
-        .sidenav a:hover,
-        .dropdown-btn:hover {
-            color: #064579;
-        }
-
-        .main {
-            margin-left: 100px;
-            /* Same width as the sidebar + left position in px */
-            font-size: 16px;
-            /* */
-            padding: 0px 0px;
-
-        }
-.logo {
-    display:block;
-    flex: ;
-    position: fixed;
-     }
-
-.flex-grid {
-  display: flex;
-}
-.col {
-  flex: 1;
-
-}
-        .card {
-            /* Add shadows to create the "card" effect */
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            min-height: 100%;
-        }
-
-        /* On mouse-over, add a deeper shadow */
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        /* Add some padding inside the card container */
-        .container {
-            padding: 2px 16px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-
-            .sidenav a {
-                font-size: 12px;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-    </header>
-    <div class="sidenav">
-      <div>  <img src="canvas.png" style="width:100px"></div>
-      <a href="index.html">Home</a>        <a href="#services">Services</a>
-        <button class="dropdown-btn">Products
-            <i class="fa-caret-down"></i>
+  <div id="pwg" class="header">Pacific West Gateway</div>
+
+  <div class="nav-wrapper">
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Products
+          <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-container">
-            <a href="metal.html" >Metal</a>
-            <a href="spice.html" >Spices</a></a>
-            <a href="#">Link 3</a>
+        <div class="dropdown-content">
+          <a href="metal.html">Metalworks</a>
+          <a href="spice.html">Spices</a>
+          <a href="textiles.html">Textiles</a>
         </div>
-        <a href="#contact">Contact</a>
+      </div>
+      <a href="services.html">About Us</a>
+      <a href="contactus.php">Contact Us</a>
+    </div>
+  </div>
+  
+  <div class="w3sidebar1 w3-bar-block w3-khaki w3-card" style="width:130px">
+    <h5 class="w3-bar-item">Menu</h5>
+
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'metal-1')">Brass</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'metal-2')">Stainless Steel</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'metal-3')">Iron</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'metal-4')">Nickel</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'metal-5')">Polishes & Finishes</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'metal-6')">Antique</button>
+  </div>
+  <div class="content">
+    <div class="w3-container">
+      <h2>Overview</h2>
+      <p>Paris is the capital of France.</p>
+      <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
     </div>
 
-    <div class="main">
-    <div class="flex-grid">
-  <div class="col"></div>
-  <div class="col"></div>
-  <div class="col"></div>
-</div>
-
+    <div id="metal-1" class="w3-container meta w3-animate-left" style="display:none;">
+      <h2>Brass</h2>
+      <p>Paris is the capital of France.</p>
+      <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
     </div>
-    <script>
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
+    <div id="metal-2" class="w3-container meta w3-animate-left" style="display:none;">
+      <h2>Stainless Steel</h2>
+      <p>Paris is the capital of France.</p>
+      <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+    </div>
+    <div id="metal-3" class="w3-container meta w3-animate-left" style="display:none;">
+      <h2>Iron</h2>
+      <p>Paris is the capital of France.</p>
+      <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+    </div>
+    <div id="metal-4" class="w3-container meta w3-animate-left" style="display:none;">
+      <h2>Nickel</h2>
+      <p>Paris is the capital of France.</p>
+      <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+    </div>
+    <div id="metal-5" class="w3-container meta w3-animate-left" style="display:none;">
+      <h2>Polishes & Finishes</h2>
+      <p>Paris is the capital of France.</p>
+      <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+    </div>
+    <div id="metal-6" class="w3-container meta w3-animate-left" style="display:none;">
+      <h2>Antique</h2>
+      <p>Paris is the capital of France.</p>
+      <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+    </div>
+  </div>
 
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        } 
-    </script>
+
+
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+    window.onscroll = function () { myFunction2() };
+
+    // Get the navbar
+    var sidebar = document.getElementById(".w3sidebar1");
+
+    // Get the offset position of the sidebar
+    var sticky2 = sidebar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction2() {
+      if (window.pageYOffset >= sticky) {
+        sidebar.classList.add("sticky-sidebar")
+      } else {
+        sidebar.classList.remove("sticky-sidebar");
+      }
+    }
+  </script>
+
+  <script>
+    function openLink(evt, animName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("meta");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+      }
+      document.getElementById(animName).style.display = "block";
+      evt.currentTarget.className += " w3-red";
+    }
+  </script>
+
 </body>
 
-</html> t
+</html>
