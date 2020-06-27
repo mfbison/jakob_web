@@ -2,132 +2,184 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
 
-    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-    <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&ampdisplay=swap" rel="stylesheet">
+  <style>
+  </style>
 
 
-    <style>
-    </style>
 
-<!--todo; link header to home, add pagelinks to home page cards, so mobile doesnt have to fumble sidenav-->
+  <!--todo; link header to home, add pagelinks to home page cards, so mobile doesnt have to fumble sidenav-->
 
 </head>
 
 <body>
-    <header>
-    </header>
-    <div class="sidenav">
-        <img src="test.png" style="width:100px">
-        <a href="index.html">Home</a>
-        <a href="#services">Services</a>
-        <button class="dropdown-btn">Products ≡
-        </button>
-        <div class="dropdown-container">
-            <a href="metal.html">Metal</a>
-            <a href="spice.html">Spices</a></a>
-            <a href="#">Link 3</a>
-        </div>
-        <a href="#contact">Contact</a>
+  <div id="pwg" class="header">Pacific West Gateway</div>
+
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="metal.html">Metalworks</a>
+        <a href="spice.html">Spices</a>
+        <a href="textiles.html">Textiles</a>
+      </div>
+    </div>
+    <a href="services.html">About Us</a>
+    <a href="contactus.php">Contact Us</a>
+  </div>
+
+  <div class="support-grid"></div>
+  <div class="content">
+    <div class="band">
+      <div class="item-1">
+        <a href="textiles.html" class="card">
+          <div id="thumb" class="w3-center"> <img src="textiles.png"> </div>
+          <h2> Textiles </h2>
+        </a>
+      </div>
+      <div class="item-2">
+        <a href="metal.html" class="card">
+          <div id="thumb" class="w3-center"> <img src="metalwork.png"></div>
+          <h2> Metalworks </h2>
+        </a>
+      </div>
+      <div class="item-2">
+        <a href="spice.html" class="card">
+          <div id="thumb" class="w3-center"> <img src="spicespic.png"></div>
+          <h2> Spices </h2>
+        </a>
+      </div>
+
+      
+      <div class="item-2">
+        <a href="services.html" class="card">
+          <div id="thumb" class="w3-center"> <img src="aboutus4.png"></div>
+          <h2> About Us </h2>
+        </a>
+      </div>
+      <div class="item-2">
+        <a href="contactus.php" class="card">
+          <div id="thumb" class="w3-center"> <img src="contacts2.png"></div>
+          <h2> Contact Us </h2>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- <div class="row" style="margin-top: 5%;">
+    <div class="column">
+
+      <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);">
+        <h3>Card 1</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+
+    <div class="card2" style="background-color: white;">
+    </div>
+  </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);">
+      <h3>Card 3</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  </div>
+  <br>
+  <div class="row">
+    <div class="column">
+      <div class="card2" style="background-color: white;">
+      </div>
     </div>
 
- <div class="grid-containerhead">
-            <div class="gridhead">gridheadtesttesttesttest</div>
-            <div class="gridheadimage"><img src="test.png"></div>
-        </div>
-    <div class="main">
+    <div class="column">
+      <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);">
+        <h3>Card 5</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
 
-   <!--     <div class="jumbotron">
-            <div class="container">
-                <h2 class="display-3">Fluid jumbo heading</h2>
-                    <p class="lead">Jumbo helper text</p>
-            </div>
-        </div> -->
-       
+    <div class="column">
+      <div class="card2" style="background-color: white;">
 
-        <ul class="flex-container wrap">
-            <li class="flex-item">
-                <div class="card">
-                    <img src="test.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                    </div>
-                </div>
-            </li>
-            <li class="flex-item">
-                <div class="card">
-                    <img src="test.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                    </div>
-                </div>
-            </li>
-            <li class="flex-item">
-                <div class="card">
-                    <img src="test.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                    </div>
-                </div>
-            </li>
-            <li class="flex-item">
-                <div class="container"> is Lorem Ipsum?
+      </div>
+    </div>
 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Why do we use it?</div>
-            </li>
-            <li class="flex-item">5</li>
-            <li class="flex-item">
-                <div class="card">
-                    <img src="test.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                    </div>
-                </div>
-            </li>
-            <li class="flex-item"></li>
-            <li class="flex-item"></li>
-        </ul>
+  </div>
+  <br>
+  <div class="row">
+    <div class="column">
+      <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);">
+        <h3>Card 7</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card2" style="background-color: white;">
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);">
+        <h3>Card 9</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
     </div>
 
 
+  </div> -->
 
 
 
-    <script>
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
 
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        } 
-    </script>
+
+
+
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+
 </body>
 
 </html>
