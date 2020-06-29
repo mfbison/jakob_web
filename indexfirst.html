@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <style>
+    </style>
+
+<!--todo; link header to home, add pagelinks to home page cards, so mobile doesnt have to fumble sidenav-->
+
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="sidenav">
+        <img src="test.png" style="width:100px">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <button class="dropdown-btn">Products ≡
+        </button>
+        <div class="dropdown-container">
+            <a href="metal.html">Metal</a>
+            <a href="spice.html">Spices</a></a>
+            <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Contact</a>
+    </div>
+
+ <div class="grid-containerhead">
+            <div class="gridhead">gridheadtesttesttesttest</div>
+            <div class="gridheadimage"><img src="test.png"></div>
+        </div>
+    <div class="main">
+
+   <!--     <div class="jumbotron">
+            <div class="container">
+                <h2 class="display-3">Fluid jumbo heading</h2>
+                    <p class="lead">Jumbo helper text</p>
+            </div>
+        </div> -->
+       
+
+        <ul class="flex-container wrap">
+            <li class="flex-item">
+                <div class="card">
+                    <img src="test.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jane Doe</b></h4>
+                        <p>Interior Designer</p>
+                    </div>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="card">
+                    <img src="test.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jane Doe</b></h4>
+                        <p>Interior Designer</p>
+                    </div>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="card">
+                    <img src="test.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jane Doe</b></h4>
+                        <p>Interior Designer</p>
+                    </div>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="container"> is Lorem Ipsum?
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Why do we use it?</div>
+            </li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">
+                <div class="card">
+                    <img src="test.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jane Doe</b></h4>
+                        <p>Interior Designer</p>
+                    </div>
+                </div>
+            </li>
+            <li class="flex-item"></li>
+            <li class="flex-item"></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        } 
+    </script>
+</body>
+
+</html>
